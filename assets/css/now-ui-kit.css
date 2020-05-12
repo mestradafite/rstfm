@@ -3575,6 +3575,8 @@ h6,
   font-size: 0.9em;
   font-weight: 700;
   text-transform: uppercase;
+  font-family: 'Zurich Black BT';
+  font-size: 20px;
 }
 
 p {
@@ -3609,9 +3611,9 @@ p {
 }
 
 .category {
-  text-transform: capitalize;
-  font-weight: 700;
-  color: #9A9A9A;
+  font-size: 16px;
+  color: #000;
+  text-align: justify;
 }
 
 .text-primary {
@@ -3899,6 +3901,11 @@ Created using IcoMoon - icomoon.io
   src: url("../fonts/nucleo-outline.eot") format("embedded-opentype"), url("../fonts/nucleo-outline.woff2") format("woff2"), url("../fonts/nucleo-outline.woff") format("woff"), url("../fonts/nucleo-outline.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'Zurich Black BT';
+  src: url("../fonts/Zurich__Black_BT.ttf") format("truetype");
 }
 
 /*------------------------
@@ -4526,8 +4533,7 @@ Created using IcoMoon - icomoon.io
 }
 
 .navbar a:not(.btn):not(.dropdown-item) {
-  color: #000;
-  border-right: 1px solid;
+  color: #fff;
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -4649,10 +4655,10 @@ Created using IcoMoon - icomoon.io
 }
 
 .navbar.navbar-transparent {
-  background-color: transparent !important;
+  background-color: #000 !important;
   box-shadow: none;
   color: #FFFFFF;
-  padding-top: 20px !important;
+  opacity: 70%;
 }
 
 .navbar.bg-white:not(.navbar-transparent) a:not(.dropdown-item):not(.btn) {

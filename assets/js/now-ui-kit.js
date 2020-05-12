@@ -185,14 +185,13 @@ nowuiKit = {
       if (transparent) {
         transparent = false;
         $('.navbar[color-on-scroll]').removeClass('navbar-transparent');
-        $('#navbar-brand').css("visibility", "visible");
-        
+        //$('#navbar-no-collapsed').css("visibility", "hidden");
       }
     } else {
       if (!transparent) {
         transparent = true;
         $('.navbar[color-on-scroll]').addClass('navbar-transparent');
-        $('#navbar-brand').css("visibility", "hidden");
+        //$('#navbar-no-collapsed').css("visibility", "visible");
       }
     }
   }, 17),
