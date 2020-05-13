@@ -40,63 +40,46 @@
 
 <body class="index-page sidebar-collapse">
   <!-- Navbar 01-->
-  <!--<nav id="navbar-collapsed" class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent  " color-on-scroll="400">
-    <div class="container">
-      <div class="navbar-translate">
-        <a id="navbar-brand" href="assets/img/rolling_stone.png" style="visibility: hidden;" rel="tooltip" title="Designed by Invision. Coded by Creative Tim" data-placement="bottom" target="_blank">
-          <img src="assets/img/logo2.jpeg" width="140" height="30" alt="">
-        </a>
-        <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-bar top-bar"></span>
-          <span class="navbar-toggler-bar middle-bar"></span>
-          <span class="navbar-toggler-bar bottom-bar"></span>
-        </button>
+  <div id="navbar-box">
+    <nav style="  transition: transform .5s cubic-bezier(.4,0,.2,1);" id="navbar-collapsed" class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent  " color-on-scroll="400">
+      <div class="container">
+        <div class="navbar-translate">
+          <!--<a id="navbar-brand" href="assets/img/rolling_stone.png" style="visibility: hidden;" rel="tooltip" title="Designed by Invision. Coded by Creative Tim" data-placement="bottom" target="_blank">
+            <img src="assets/img/logo2.jpeg" width="140" height="30" alt="">
+          </a>-->
+          <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar top-bar"></span>
+            <span class="navbar-toggler-bar middle-bar"></span>
+            <span class="navbar-toggler-bar bottom-bar"></span>
+          </button>
+        </div>
+        
+        <div class="collapse navbar-collapse justify-content-center" id="navigation" data-nav-image="./assets/img/blurred-image-1.jpg">
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#music-section">Music</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">TV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Politics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Culture</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Video</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="border: none !important;">Charts</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      
-      <div class="collapse navbar-collapse justify-content-center" id="navigation" data-nav-image="./assets/img/blurred-image-1.jpg">
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#music-section">Music</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">TV</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Movies</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Politics</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Culture</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Video</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" style="border: none !important;">Charts</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>-->
-
-  <div class="nav-container">
-    <nav id = 'navbar'>
-        <div class="link-container ">
-            <a href='#' class="nav-link">Music</a>
-        </div>
-
-        <div class="link-container">
-            <a href='#' class="nav-link">FAQ</a>
-        </div>
-        <div class="link-container">
-            <a href='#' class="nav-link">List a Coin</a>
-        </div>
-
-        <div class="link-container">
-            <a href='#' class="nav-link">Contact Us</a>
-        </div>
     </nav>
   </div>
   
@@ -114,7 +97,7 @@
   </script>
   <div class="wrapper">
     <div class="page-header clear-filter">
-      
+      <a id="arrow" class="arrow-dropdown" ><i class="fas fa-arrow-down"></i></a>
       <div id="music" class="page-header-image" data-parallax="true" style="left: -500px; background-image:url('./assets/img/music.png');">
       </div>
       <div>

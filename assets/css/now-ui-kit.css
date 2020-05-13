@@ -3693,27 +3693,6 @@ body {
   background: #FFFFFF;
 }
 
-
-#navbar {
-  display: flex;
-  background-color: black;
-  transform: translateY(-100%);
-  transition: transform .5s cubic-bezier(.4,0,.2,1);
-}
-#navbar a {
-    color: white;
-    text-decoration: none;
-}
-#navbar > * {
-  padding: 1rem;
-}
-body {
-  margin: 0;
-}
-.nav-container:hover #navbar {
-  transform: translateY(0);
-}
-
 /* Animations */
 
 .nav-pills .nav-link,
@@ -4673,11 +4652,21 @@ Created using IcoMoon - icomoon.io
   width: 17px;
 }
 
+.arrow-dropdown{
+  transition: transform .5s cubic-bezier(.4,0,.2,1); 
+  color: black !important; 
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 40px;
+}
+
 .navbar.navbar-transparent {
   background-color: #000 !important;
   box-shadow: none;
   color: #FFFFFF;
   opacity: 70%;
+  transform: translateY(-100%);
 }
 
 .navbar.bg-white:not(.navbar-transparent) a:not(.dropdown-item):not(.btn) {

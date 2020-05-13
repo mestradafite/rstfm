@@ -175,6 +175,18 @@ $(document).on('click', '.navbar-toggler', function() {
   }
 });
 
+$(".navbar").hover(function(){
+  $('#navbar-collapsed').css("transform", "translateY(0)");
+},function(){
+  $('#navbar-collapsed').css("transform", "translateY(-100%)");
+  $('#arrow').css('transform', "rotate(0deg) translateY(0)");
+});
+
+$("#arrow").hover(function(){
+  $('#navbar-collapsed').css("transform", "translateY(0)");
+  $('#arrow').css( 'transform', 'rotate(180deg) translateY(-50%)');
+});
+
 nowuiKit = {
   misc: {
     navbar_menu_visible: 0
