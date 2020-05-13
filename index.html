@@ -40,12 +40,12 @@
 
 <body class="index-page sidebar-collapse">
   <!-- Navbar 01-->
-  <nav id="navbar-no-collapsed" class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent  " color-on-scroll="400">
+  <!--<nav id="navbar-collapsed" class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent  " color-on-scroll="400">
     <div class="container">
       <div class="navbar-translate">
-        <!--<a id="navbar-brand" href="assets/img/rolling_stone.png" style="visibility: hidden;" rel="tooltip" title="Designed by Invision. Coded by Creative Tim" data-placement="bottom" target="_blank">
+        <a id="navbar-brand" href="assets/img/rolling_stone.png" style="visibility: hidden;" rel="tooltip" title="Designed by Invision. Coded by Creative Tim" data-placement="bottom" target="_blank">
           <img src="assets/img/logo2.jpeg" width="140" height="30" alt="">
-        </a>-->
+        </a>
         <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-bar top-bar"></span>
           <span class="navbar-toggler-bar middle-bar"></span>
@@ -53,7 +53,7 @@
         </button>
       </div>
       
-      <div id="expanded-nav" class="collapse navbar-collapse justify-content-center" id="navigation" data-nav-image="./assets/img/blurred-image-1.jpg">
+      <div class="collapse navbar-collapse justify-content-center" id="navigation" data-nav-image="./assets/img/blurred-image-1.jpg">
         <ul class="nav justify-content-center">
           <li class="nav-item">
             <a class="nav-link" href="index.html#music-section">Music</a>
@@ -79,7 +79,27 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </nav>-->
+
+  <div class="nav-container">
+    <nav id = 'navbar'>
+        <div class="link-container ">
+            <a href='#' class="nav-link">Music</a>
+        </div>
+
+        <div class="link-container">
+            <a href='#' class="nav-link">FAQ</a>
+        </div>
+        <div class="link-container">
+            <a href='#' class="nav-link">List a Coin</a>
+        </div>
+
+        <div class="link-container">
+            <a href='#' class="nav-link">Contact Us</a>
+        </div>
+    </nav>
+  </div>
+  
 
   <!-- End Navbar -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -94,6 +114,7 @@
   </script>
   <div class="wrapper">
     <div class="page-header clear-filter">
+      
       <div id="music" class="page-header-image" data-parallax="true" style="left: -500px; background-image:url('./assets/img/music.png');">
       </div>
       <div>
@@ -135,16 +156,16 @@
     <div class="main">
       <!-- Start Music Section-->
       <div id="music-section" class="section">
-        <div class="container" style="max-width: 1350px;">
+        <div class="container">
           <h5>Music</h5>
           <div class="row">
-            <div class="col-md-10 col-xl-6 ">
+            <div class="col-md-6 col-xl-6 ">
               <h6>Titular</h6>
               <p class="category">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean magna nunc, scelerisque nec bibendum nec, 
                                   viverra ut massa. Integer ut semper risus, sit amet accumsan lectus. </p>
               <img src="./assets/img/bg11.jpg" alt="Raised Image" class="rounded img-raised">
             </div>
-            <div class="col-md-10 col-xl-6 ">
+            <div class="col-md-6 col-xl-6 ">
               <h6>Titular</h6>
               <p class="category">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean magna nunc, scelerisque nec bibendum nec, 
                 viverra ut massa. Integer ut semper risus, sit amet accumsan lectus. </p>
@@ -153,13 +174,13 @@
           </div>
 
           <div style="margin-top: 80px;" class="row">
-            <div class="col-md-10 col-xl-6 ">
+            <div class="col-md-6 col-xl-6 ">
               <h6>Titular</h6>
               <p class="category">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean magna nunc, scelerisque nec bibendum nec, 
                                   viverra ut massa. Integer ut semper risus, sit amet accumsan lectus. </p>
               <img src="./assets/img/bg11.jpg" alt="Raised Image" class="rounded img-raised">
             </div>
-            <div class="col-md-10 col-xl-6 ">
+            <div class="col-md-6 col-xl-6 ">
               <h6>Titular</h6>
               <p class="category">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean magna nunc, scelerisque nec bibendum nec, 
                 viverra ut massa. Integer ut semper risus, sit amet accumsan lectus. </p>
@@ -172,7 +193,7 @@
 
       <!-- Start Tv Section-->
       <div id="tv-section" class="section">
-        <div class="container" style="max-width: 1350px;">
+        <div class="container">
           <h5>TV</h5>
           <div class="row">
             <div class="col-md-10 col-xl-6 ">
@@ -195,7 +216,7 @@
 
       <!-- Start Movie Section -->
       <div id="movie-section" class="section">
-        <div class="container" style="max-width: 1350px;">
+        <div class="container">
           <h5>MOVIE</h5>
           <div class="row">
             <div class="col-md-5 col-xl-4 ">
@@ -255,7 +276,7 @@
 
       <!-- Start Charts Section -->
       <div id="charts" class="section">
-        <div class="container" style="max-width: 1350px;">
+        <div class="container">
           <h5>CHARTS</h5>
           <div class="row">
             <div class="col-md-10 col-xl-4 ">
