@@ -4655,10 +4655,31 @@ Created using IcoMoon - icomoon.io
 .arrow-dropdown{
   transition: transform .5s cubic-bezier(.4,0,.2,1); 
   color: black !important; 
-  position: absolute;
+  position: fixed;
   top: 20px;
   left: 20px;
-  font-size: 40px;
+  font-size: 25px;
+  z-index: 100;
+}
+
+#subscribe-button{
+  transition: transform .5s cubic-bezier(.4,0,.2,1); 
+  position: fixed;
+  right: 200px;
+  z-index: 100;
+  padding: 10px;
+  font-size: 20px;
+  transform: translateY(-100%);
+}
+
+#login-button{
+  transition: transform .5s cubic-bezier(.4,0,.2,1); 
+  position: fixed;
+  right: 87px;
+  z-index: 100;
+  padding: 10px;
+  font-size: 20px;
+  transform: translateY(-100%);
 }
 
 .navbar.navbar-transparent {

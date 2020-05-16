@@ -180,11 +180,19 @@ $(".navbar").hover(function(){
 },function(){
   $('#navbar-collapsed').css("transform", "translateY(-100%)");
   $('#arrow').css('transform', "rotate(0deg) translateY(0)");
+  if(!transparent) {
+    $('#subscribe-button').css("transform", "translateY(0)");
+    $('#login-button').css("transform", "translateY(0)");
+  }
 });
 
 $("#arrow").hover(function(){
   $('#navbar-collapsed').css("transform", "translateY(0)");
-  $('#arrow').css( 'transform', 'rotate(180deg) translateY(-50%)');
+  $('#arrow').css( 'transform', 'rotate(180deg) translateY(-90%)');
+  if(!transparent) {
+    $('#subscribe-button').css("transform", "translateY(180%)");
+    $('#login-button').css("transform", "translateY(180%)");
+  }
 });
 
 nowuiKit = {
@@ -193,16 +201,24 @@ nowuiKit = {
   },
 
   checkScrollForTransparentNavbar: debounce(function() {
-    if ($(document).scrollTop() > 200) {
+    if ($(document).scrollTop() > 300) {
       if (transparent) {
         transparent = false;
-        $('.navbar[color-on-scroll]').removeClass('navbar-transparent');
+        $('#subscribe-button').css("transform", "translateY(0)");
+        $('#login-button').css("transform", "translateY(0)");
+
+
+        //$('.navbar[color-on-scroll]').removeClass('navbar-transparent');
         //$('#navbar-no-collapsed').css("visibility", "hidden");
       }
     } else {
       if (!transparent) {
         transparent = true;
-        $('.navbar[color-on-scroll]').addClass('navbar-transparent');
+        $('#subscribe-button').css("transform", "translateY(-100%)");
+        $('#login-button').css("transform", "translateY(-100%)");
+
+
+        //$('.navbar[color-on-scroll]').addClass('navbar-transparent');
         //$('#navbar-no-collapsed').css("visibility", "visible");
       }
     }
