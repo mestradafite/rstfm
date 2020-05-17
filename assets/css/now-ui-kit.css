@@ -4662,6 +4662,12 @@ Created using IcoMoon - icomoon.io
   z-index: 100;
 }
 
+#social-network{
+  position: absolute;
+  bottom:200px;
+  right: 400px;
+}
+
 #subscribe-button{
   transition: transform .5s cubic-bezier(.4,0,.2,1); 
   position: fixed;
