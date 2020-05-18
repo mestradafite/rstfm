@@ -4652,6 +4652,7 @@ Created using IcoMoon - icomoon.io
   width: 17px;
 }
 
+
 .arrow-dropdown{
   transition: transform .5s cubic-bezier(.4,0,.2,1); 
   color: black !important; 
@@ -4660,6 +4661,18 @@ Created using IcoMoon - icomoon.io
   left: 20px;
   font-size: 25px;
   z-index: 100;
+}
+
+.carousel-notice{
+  position: fixed;
+  color: white;
+  top: 200px;
+  right: 200px;
+  padding-left: 20px;
+  border-left: solid #d81f26;
+  border-radius: 1px;
+  text-align: justify;
+  max-width: 30%;
 }
 
 #social-network{
