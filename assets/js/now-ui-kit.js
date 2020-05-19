@@ -183,6 +183,7 @@ $(".navbar").hover(function(){
   if(!transparent) {
     $('#subscribe-button').css("transform", "translateY(0)");
     $('#login-button').css("transform", "translateY(0)");
+    $('.logo-button').css("transform", "translateY(0)");
   }
 });
 
@@ -192,7 +193,12 @@ $("#arrow").hover(function(){
   if(!transparent) {
     $('#subscribe-button').css("transform", "translateY(180%)");
     $('#login-button').css("transform", "translateY(180%)");
+    $('.logo-button').css("transform", "translateY(130%)");
   }
+});
+
+$('.logo-button').click(function(){ 
+  $('html,body').animate({ scrollTop: 0 }, 'slow');
 });
 
 nowuiKit = {
@@ -206,20 +212,14 @@ nowuiKit = {
         transparent = false;
         $('#subscribe-button').css("transform", "translateY(0)");
         $('#login-button').css("transform", "translateY(0)");
-
-
-        //$('.navbar[color-on-scroll]').removeClass('navbar-transparent');
-        //$('#navbar-no-collapsed').css("visibility", "hidden");
+        $('.logo-button').css("transform", "translateY(0)");
       }
     } else {
       if (!transparent) {
         transparent = true;
         $('#subscribe-button').css("transform", "translateY(-100%)");
         $('#login-button').css("transform", "translateY(-100%)");
-
-
-        //$('.navbar[color-on-scroll]').addClass('navbar-transparent');
-        //$('#navbar-no-collapsed').css("visibility", "visible");
+        $('.logo-button').css("transform", "translateY(-120%)");
       }
     }
   }, 17),

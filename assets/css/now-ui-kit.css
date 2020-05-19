@@ -4701,6 +4701,17 @@ Created using IcoMoon - icomoon.io
   transform: translateY(-100%);
 }
 
+
+.logo-button{
+  transition: transform .5s cubic-bezier(.4,0,.2,1); 
+  position: fixed;
+  left: 47.5%;
+  transform: translateY(-120%);
+  z-index: 100;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
 .navbar.navbar-transparent {
   background-color: #000 !important;
   box-shadow: none;
