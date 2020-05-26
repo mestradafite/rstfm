@@ -24,7 +24,7 @@
   <link rel="icon" type="image/png" href="./assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    RS TFM
+    RS TFM | NEW
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -94,158 +94,73 @@
       $("#music-button").animate({ 'padding-left' : 200 }, 1000);
       $("#lizo-button").animate({ 'padding-right' : 200 }, 1000);
     });
-
-    $(window).scroll(function() {
-      var height = $(window).scrollTop();
-
-      if(height  > 740) {        
-        $('#arrow').attr('style', 'color: black !important');
-      }else{
-        $('#arrow').attr('style', 'color: white !important');
-      }
-    });
   </script>
   <div class="wrapper">
     <div>
       <a href="index.html" class="logo-button" >
-        <img  alt="Home" src="./assets/img/logo.png" width="60" height="60">
+        <img alt="Home" src="./assets/img/logo.png" width="60" height="60">
       </a>
-      <a id="arrow" style="color: white !important;" class="arrow-dropdown" ><i class="fas fa-arrow-down"></i></a>
+      <a id="arrow"  class="arrow-dropdown" ><i class="fas fa-arrow-down"></i></a>
       <button id="subscribe-button" class="btn btn-primary" style="background-color: #d81f26 !important;">SUBSCRIBE</button>
       <button id="login-button" class="btn btn-primary" style="background-color: #000 !important;">LOGIN AS PRO</button>
     </div>
-    <div class="page-header clear-filter">
-      <h6 style="font-size: 30px; position: absolute; top: 10%; left: 54%;">TOP GENERATION</h6>
-
-      <div id="carouselExampleIndicators" class="carousel slide page-header-image"  data-parallax="true" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <div class="carousel-item active">
-            <img class="d-block" src="assets/img/carousel/elton.jpg" alt="First slide">
-            <div class="carousel-notice">
-              <h6>Title</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean magna nunc, scelerisque nec bibendum nec, 
-                viverra ut massa. Integer ut semper risus, sit amet accumsan lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean magna nunc, scelerisque nec bibendum nec, 
-                viverra ut massa. Integer ut semper risus, sit amet accumsan lectus. </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="d-block" src="assets/img/carousel/jimmi-hendrix.jpg" alt="Second slide">
-            <div class="carousel-notice">
-              <h6>Title</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean magna nunc, scelerisque nec bibendum nec, 
-                viverra ut massa. Integer ut semper risus, sit amet accumsan lectus. </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img style="width: 10000px !important;" class="d-block" src="assets/img/carousel/canned-head.jpg" alt="Third slide">
-            <div class="carousel-notice">
-              <h6>Title</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean magna nunc, scelerisque nec bibendum nec, 
-                viverra ut massa. Integer ut semper risus, sit amet accumsan lectus. </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="d-block" src="assets/img/carousel/ray-sawyer.jpg" alt="Second slide">
-            <div class="carousel-notice">
-              <h6>Title</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean magna nunc, scelerisque nec bibendum nec, 
-                viverra ut massa. Integer ut semper risus, sit amet accumsan lectus. </p>
-            </div>
-          </div>
-          <div id="social-network">
-            <div class="text-center col-md-12 col-lg-12" >
-              <a href="" style="background-color: #d81f26;" class="btn btn-neutral btn-icon btn-lg btn-round">
-                <i class="fab fa-facebook-f"></i>            
-              </a>
-              <a href="" style="background-color: #d81f26;" class="btn btn-neutral btn-icon btn-lg btn-round">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="" style="background-color: #d81f26;" class="btn btn-neutral btn-icon btn-lg btn-round">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="" style="background-color: #d81f26;" class="btn btn-neutral btn-icon btn-lg btn-round">
-                <i class="fab fa-youtube"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <i class="now-ui-icons arrows-1_minimal-left"></i>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <i class="now-ui-icons arrows-1_minimal-right"></i>
-      </a>
-    </div>
+    
     <div class="main">
-
       <div class="section">
         <div class="container">
-          <h5>Music</h5>
+          <h5>MUSIC</h5>
           <div class="row">
             <div class="col-9">
-              <div class="container">
-                <div class="row">
-                  <div class="col">
-                    <a class="ahref" href="new.html">
-                      <h6>Titular</h6>
-                      <p class="category">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </p>
-                      <img src="./assets/img/bg11.jpg" alt="Raised Image" class="rounded img-raised">
-                    </a>
-                  </div>
-                  <div class="col">
-                    <a class="ahref" href="new.html">
-                      <h6>Titular</h6>
-                      <p class="category">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </p>
-                      <img src="./assets/img/bg11.jpg" alt="Raised Image" class="rounded img-raised">
-                    </a>
-                  </div>
-                  <div class="w-100"></div>
-                  <div style="margin-top: 20px;" class="col">
-                    <a class="ahref" href="new.html">
-                      <h6>Titular</h6>
-                      <p class="category">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                      <img src="./assets/img/bg11.jpg" alt="Raised Image" class="rounded img-raised">
-                    </a>
-                  </div>
-                  <div style="margin-top: 20px;" class="col">
-                    <a class="ahref" href="new.html">
-                      <h6>Titular</h6>
-                      <p class="category">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                      <img src="./assets/img/bg11.jpg" alt="Raised Image" class="rounded img-raised">
-                    </a>
-                  </div>
+                <div class="container">
+                    <h6>TITLE</h6>
+                    <h5>Subtitle</h5>
+                    <p class="category">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <img src="./assets/img/bg11.jpg" alt="Raised Image" class="rounded img-raised">
+                    <p style="margin-top: 30px;" class="category">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Ut tristique elementum ligula at maximus. Vivamus hendrerit pellentesque turpis at 
+                        tincidunt. In hac habitasse platea dictumst. </p>
+                    <p class="category">Duis id varius tortor, vitae posuere est. 
+                        Phasellus arcu magna, suscipit vel tincidunt non, pretium id mauris. Vestibulum sapien 
+                        quam, vestibulum sed fringilla ut, ultricies sit amet libero. Morbi sed blandit magna. 
+                        Cras bibendum sodales iaculis. Donec et finibus nisl, a blandit risus. Nam nec faucibus 
+                        neque. Praesent et pharetra lorem. Suspendisse potenti. Aliquam ut malesuada nibh.</p>
+                    <div class="text-left" >
+                        <a href="" style="background-color: #d81f26;" class="btn btn-neutral btn-icon btn-lg btn-round">
+                        <i class="fab fa-facebook-f"></i>            
+                        </a>
+                        <a href="" style="background-color: #d81f26;" class="btn btn-neutral btn-icon btn-lg btn-round">
+                        <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="" style="background-color: #d81f26;" class="btn btn-neutral btn-icon btn-lg btn-round">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="" style="background-color: #d81f26;" class="btn btn-neutral btn-icon btn-lg btn-round">
+                        <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <textarea style="margin-top: 30px;" name="" id="commentary" cols="130" rows="10"></textarea>
                 </div>
-              </div>
             </div>
             <div class="col" >
               <div class="container" style="padding-left: 20%;  border-left: solid #d81f26;">
                 <div class="row">
-                  <a class="ahref" href="new.html">
-                    <h6>Titular</h6>
-                    <p class="category">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                    <img src="./assets/img/bg11.jpg" alt="Raised Image" class="rounded img-raised">
-                  </a>
+                  <h6>Titular</h6>
+                  <p class="category">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                  <img src="./assets/img/bg11.jpg" alt="Raised Image" class="rounded img-raised">
                 </div>
                 <div style="margin-top: 30px;" class="row">
-                  <a class="ahref" href="new.html">
-                    <h6>Titular</h6>
-                    <p class="category">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                    <img src="./assets/img/bg11.jpg" alt="Raised Image" class="rounded img-raised">
-                  </a>
+                  <h6>Titular</h6>
+                  <p class="category">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                  <img src="./assets/img/bg11.jpg" alt="Raised Image" class="rounded img-raised">
                 </div>
                 <div style="margin-top: 30px;" class="row">
-                  <a class="ahref" href="new.html">
-                    <h6>Titular</h6>
-                    <p class="category">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                    <img src="./assets/img/bg11.jpg" alt="Raised Image" class="rounded img-raised">
-                  </a>
+                  <h6>Titular</h6>
+                  <p class="category">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                  <img src="./assets/img/bg11.jpg" alt="Raised Image" class="rounded img-raised">
                 </div>
               </div>
             </div>

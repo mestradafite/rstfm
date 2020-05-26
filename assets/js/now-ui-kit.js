@@ -197,10 +197,6 @@ $("#arrow").hover(function(){
   }
 });
 
-$('.logo-button').click(function(){ 
-  $('html,body').animate({ scrollTop: 0 }, 'slow');
-});
-
 nowuiKit = {
   misc: {
     navbar_menu_visible: 0

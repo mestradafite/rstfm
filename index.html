@@ -203,7 +203,7 @@
       <!-- Start Movie Section -->
       <div id="movies-section" class="section">
         <div class="container">
-          <h5>MOVIE</h5>
+          <h5>Movie</h5>
           <div class="row">
             <div class="col-md-5 col-xl-4 ">
               <h6>Titular</h6>
@@ -263,7 +263,7 @@
       <!-- Start Charts Section -->
       <div id="charts-section" class="section">
         <div class="container">
-          <h5>CHARTS</h5>
+          <h5>Charts</h5>
           <div class="row">
             <div class="col-md-10 col-xl-4 ">
               <img src="./assets/img/bg11.jpg" alt="Raised Image" class="rounded img-raised">
@@ -330,6 +330,10 @@
     $(document).ready(function() {
       // the body of this function is in assets/js/now-ui-kit.js
       nowuiKit.initSliders();
+    });
+
+    $('.logo-button').click(function(){ 
+      $('html,body').animate({ scrollTop: 0 }, 'slow');
     });
 
     function scrollToDownload() {
