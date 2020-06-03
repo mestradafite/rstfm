@@ -3629,6 +3629,51 @@ h6,
   font-size: 20px;
 }
 
+.top-generation-h6 {
+  font-size: 0.9em;
+  font-weight: 700;
+  font-family: "Zurich Black BT";
+  font-size: 20px;
+}
+
+.new-generation-h6 {
+  font-weight: 700;
+  font-family: "Labil Grotesk";
+  text-align: initial;
+  text-transform: none;
+  font-size: 30px;
+}
+
+.round-title {
+  border-radius: 25px;
+  font-family: "Labil Grotesk";
+  text-align: center;
+  color: black;
+  text-transform: none;
+  background: #18ce0f;
+  font-size: 30px;
+  height: 40px;
+}
+
+.round-title-light {
+  border-radius: 25px;
+  font-family: "Labil Grotesk";
+  text-align: center;
+  color: black;
+  text-transform: none;
+  background: #18ce0f;
+  font-size: 16px;
+  height: 21px;
+  width: 100px;
+}
+
+.new-generation-h5 {
+  font-family: "Ogg Roman";
+  text-align: initial;
+  text-transform: none;
+  font-size: 20px;
+}
+
 p {
   line-height: 1.61em;
   font-weight: 300;
@@ -3959,6 +4004,16 @@ Created using IcoMoon - icomoon.io
 @font-face {
   font-family: "Zurich Black BT";
   src: url("../fonts/Zurich__Black_BT.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Labil Grotesk";
+  src: url("../fonts/LabilGrotesk-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Ogg Roman";
+  src: url("../fonts/Ogg_Roman.ttf") format("truetype");
 }
 
 /*------------------------
@@ -4732,9 +4787,8 @@ Created using IcoMoon - icomoon.io
 .carousel-new-notice {
   position: absolute;
   color: white;
-  top: 40%;
+  top: 30%;
   right: 49%;
-  /*text-align: justify;*/
 }
 
 #social-network {
@@ -4784,6 +4838,18 @@ Created using IcoMoon - icomoon.io
 #commentary:focus {
   outline: none !important;
   border-color: #d81f26;
+}
+
+#textarea-ng {
+  background-color: #141414;
+  color: white;
+  font-family: "Californian FB";
+  text-align: justify;
+}
+
+#textarea-ng:focus {
+  outline: none !important;
+  border-color: #16c00e;
 }
 
 #login-button {
