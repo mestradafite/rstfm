@@ -3650,9 +3650,12 @@ h6,
   text-align: center;
   color: black;
   text-transform: none;
-  background: #18ce0f;
-  font-size: 30px;
-  height: 40px;
+  background: #86c83c;
+  font-size: 16px;
+  height: 23px;
+  position: absolute;
+  width: 105px;
+  right: 7%;
 }
 
 .round-title-light {
@@ -3661,7 +3664,7 @@ h6,
   text-align: center;
   color: black;
   text-transform: none;
-  background: #18ce0f;
+  background: #86c83c;
   font-size: 16px;
   height: 21px;
   width: 100px;
@@ -4849,7 +4852,7 @@ Created using IcoMoon - icomoon.io
 
 #textarea-ng:focus {
   outline: none !important;
-  border-color: #16c00e;
+  border-color: #86c83c;
 }
 
 #login-button {
