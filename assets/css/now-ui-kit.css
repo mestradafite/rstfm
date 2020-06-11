@@ -3639,7 +3639,7 @@ h6,
 .new-generation-h6 {
   font-weight: 700;
   font-family: "Labil Grotesk";
-  text-align: initial;
+  text-align: left;
   text-transform: none;
   font-size: 30px;
 }
@@ -3671,8 +3671,10 @@ h6,
 }
 
 .new-generation-h5 {
+  margin-top: 20px;
+  font-weight: 100;
   font-family: "Ogg Roman";
-  text-align: initial;
+  text-align: left;
   text-transform: none;
   font-size: 20px;
 }
@@ -3905,6 +3907,14 @@ body {
   font-weight: 400;
   text-align: center;
   color: #444;
+}
+
+.readmore:hover{
+  color: #86c83c;
+}
+
+.readmore{
+  color: #86c83c;
 }
 
 .nav-pills .nav-item .nav-link:hover {
@@ -4788,10 +4798,14 @@ Created using IcoMoon - icomoon.io
 }
 
 .carousel-new-notice {
-  position: absolute;
+  position: fixed;
   color: white;
-  top: 30%;
-  right: 49%;
+  background: rgba(0, 0, 0, 0.6);
+  top: 200px;
+  right: 200px;
+  text-align: left;
+  max-width: 30%;
+  padding: 2%;
 }
 
 #social-network {
