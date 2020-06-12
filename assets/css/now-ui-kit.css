@@ -3670,6 +3670,19 @@ h6,
   width: 100px;
 }
 
+.h6-index{
+  text-transform: none;
+}
+
+
+.index-notice-box{
+  padding-top: 5%;
+}
+
+.index-notice-box-politics{
+  padding-top: 10%;
+}
+
 .new-generation-h5 {
   margin-top: 20px;
   font-weight: 100;
@@ -4797,6 +4810,17 @@ Created using IcoMoon - icomoon.io
   max-width: 30%;
 }
 
+.border-red{
+  border-top: solid 4px #d81f26;
+  padding-top: 1%;
+}
+
+.title-index{
+  font-weight: 700;
+  font-family: "Zurich Black BT";
+  font-size: 50px;
+}
+
 .carousel-new-notice {
   position: fixed;
   color: white;
@@ -4829,12 +4853,23 @@ Created using IcoMoon - icomoon.io
   color: black;
 }
 
+.ahref-index:hover {
+  text-decoration: none !important;
+  color: black;
+}
+
+.ahref-index {
+  outline: none;
+  color: black;
+}
+
 .ahref-new:hover {
   text-decoration: none !important;
   color: grey;
 }
 
 .ahref-new {
+  z-index: 100;
   color: white;
 }
 
@@ -5262,8 +5297,15 @@ img {
   max-width: 100%;
 }
 
-.img-raised {
+.img-raised-index {
+  opacity: 0.8;
   box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+.img-raised-down {
+  opacity: 1;
+  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0);
+  transition: all 0.3s ease-in-out;
 }
 
 .popover {

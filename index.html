@@ -95,12 +95,6 @@
                 <a class="nav-link" href="#politics-section">Politics</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#culture-section">Culture</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#video-section">Video</a>
-              </li>
-              <li class="nav-item">
                 <a
                   class="nav-link"
                   href="#charts-section"
@@ -123,6 +117,17 @@
         $("#lizo").animate({ left: "-=400" }, 1000);
         $("#music-button").animate({ "padding-left": 200 }, 1000);
         $("#lizo-button").animate({ "padding-right": 200 }, 1000);
+
+        
+        $( ".ahref-index" ).hover(
+          function() {
+            $(this).find("#raised-image").addClass( "img-raised-index" );
+            $(this).find("#raised-image").removeClass( "img-raised-down" );
+          }, function() {
+            $(this).find("#raised-image").removeClass( "img-raised-index" );
+            $(this).find("#raised-image").addClass( "img-raised-down" );
+          }
+        );
       });
     </script>
     <div class="wrapper">
@@ -249,61 +254,81 @@
       <div class="main">
         <!-- Start Music Section-->
         <div id="music-section" class="section">
-          <div class="container">
-            <h5>Music</h5>
+          <div class="container border-red">
+            <h5 class="title-index">Music</h5>
             <div class="row">
               <div class="col-md-6 col-xl-6">
-                <h6>The Making of Woodstock’69</h6>
-                <p class="category">
-                  It’s easy to forget how doomed it seemed at the time. The new
-                  50th-anniversary coffeetable book Woodstock: 3 Days of Peace &
-                  Music details the harrowing planning process.
-                </p>
-                <img
-                  src="./assets/img/index-news/music-new01.jpeg"
-                  alt="Raised Image"
-                  class="rounded img-raised"
-                />
+                <a class="ahref-index" href="new.html">
+                  <img
+                    id="raised-image"
+                    src="./assets/img/index-news/music-new01.jpeg"
+                    alt="Raised Image"
+                    class="rounded"
+                  />
+                  <div class="index-notice-box">
+                    <h6 class="h6-index">The Making of Woodstock’69</h6>
+                    <p class="category">
+                      It’s easy to forget how doomed it seemed at the time. The new
+                      50th-anniversary coffeetable book Woodstock: 3 Days of Peace &
+                      Music details the harrowing planning process.
+                    </p>
+                  </div>
+                </a>
               </div>
               <div class="col-md-6 col-xl-6">
-                <h6>How King Princess Became a‘Cheap Queen’</h6>
-                <p class="category">
-                  For the cover of her debut album, Cheap Queen, Mikaela Straus
-                  embraced a “drag persona,” with hyperstylized makeup. “[It’s]
-                  this feminized version of myself,” says the 20-year-old,
-                </p>
-                <img
-                  src="./assets/img/index-news/music-new03.jpeg"
-                  alt="Raised Image"
-                  class="rounded img-raised"
-                />
+                <a class="ahref-index" href="new.html">
+                  <img 
+                    id="raised-image"
+                    src="./assets/img/index-news/music-new03.jpeg"
+                    alt="Raised Image"
+                    class="rounded"
+                  />
+                  <div class="index-notice-box">
+                    <h6 class="h6-index">How King Princess Became a‘Cheap Queen’</h6>
+                    <p class="category">
+                      For the cover of her debut album, Cheap Queen, Mikaela Straus
+                    embraced a “drag persona,” with hyperstylized makeup. “[It’s]
+                    this feminized version of myself,” says the 20-year-old.
+                    </p>
+                  </div>
+                </a>
               </div>
             </div>
 
-            <div style="margin-top: 80px;" class="row">
+            <div style="margin-top: 70px;" class="row">
               <div class="col-md-6 col-xl-6">
-                <h6>Inside the Rock Biopic Boom</h6>
-                <p class="category">
-                  The genre is enjoying an unprecedentedresurgence, thanks to
-                  the success of Bohemian Rhapsody and Rocketman.
-                </p>
-                <img
-                  src="./assets/img/index-news/music-new02.jpeg"
-                  alt="Raised Image"
-                  class="rounded img-raised"
-                />
+                <a class="ahref-index" href="new.html">
+                  <img
+                    id="raised-image"
+                    src="./assets/img/index-news/music-new02.jpeg"
+                    alt="Raised Image"
+                    class="rounded"
+                  />
+                  <div class="index-notice-box">
+                    <h6 class="h6-index">Inside the Rock Biopic Boom</h6>
+                    <p class="category">
+                      The genre is enjoying an unprecedentedresurgence, thanks to
+                      the success of Bohemian Rhapsody and Rocketman.
+                    </p>
+                  </div>
+                </a>
               </div>
               <div class="col-md-6 col-xl-6">
-                <h6>Camila Cabello</h6>
-                <p class="category">
-                  The pop star on being obsessed with early-aughts pop and why
-                  falling for Shawn Mendes was ‘awkward’ By BRITTANY SPANOS
-                </p>
-                <img
-                  src="./assets/img/index-news/music-new04.jpeg"
-                  alt="Raised Image"
-                  class="rounded img-raised"
-                />
+                <a class="ahref-index" href="new.html">
+                  <img
+                    id="raised-image"
+                    src="./assets/img/index-news/music-new04.jpeg"
+                    alt="Raised Image"
+                    class="rounded"
+                  />
+                  <div class="index-notice-box">
+                    <h6 class="h6-index">Camila Cabello</h6>
+                    <p class="category">
+                      The pop star on being obsessed with early-aughts pop and why
+                      falling for Shawn Mendes was ‘awkward’.
+                    </p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -312,32 +337,42 @@
 
         <!-- Start Tv Section-->
         <div id="tv-section" class="section">
-          <div class="container" style="margin-top: -100px;">
-            <h5>TV</h5>
+          <div class="container border-red">
+            <h5 class="title-index">Tv</h5>
             <div class="row">
               <div class="col-md-10 col-xl-6">
-                <h6>Inside Elton John’s Magical Movie</h6>
-                <p class="category">
-                  His new big-screen musical, ‘Rocketman,’ is anything but a
-                  standard biopic.
-                </p>
-                <img
-                  src="./assets/img/index-news/tv-new01.jpeg"
-                  alt="Raised Image"
-                  class="rounded img-raised"
-                />
+                <a class="ahref-index" href="new.html">
+                  <img
+                    id="raised-image"
+                    src="./assets/img/index-news/tv-new01.jpeg"
+                    alt="Raised Image"
+                    class="rounded"
+                  />
+                  <div class="index-notice-box">
+                    <h6 class="h6-index">Inside Elton John’s Magical Movie</h6>
+                    <p class="category">
+                      His new big-screen musical, ‘Rocketman,’ is anything but a
+                      standard biopic.
+                    </p>
+                  </div>
+                </a>
               </div>
               <div class="col-md-10 col-xl-6">
-                <h6>A COUNTRY STAR’S BIG POP MOVE</h6>
-                <p class="category">
-                  Maren Morris makes her bid for Top 40 glory with an
-                  adventurous second album.
-                </p>
-                <img
-                  src="./assets/img/index-news/tv-new02.jpeg"
-                  alt="Raised Image"
-                  class="rounded img-raised"
-                />
+                <a class="ahref-index" href="new.html">
+                  <img
+                    id="raised-image"
+                    src="./assets/img/index-news/tv-new02.jpeg"
+                    alt="Raised Image"
+                    class="rounded"
+                  />
+                  <div class="index-notice-box">
+                    <h6 class="h6-index">A Country Star's Big Pop Move</h6>
+                    <p class="category">
+                      Maren Morris makes her bid for Top 40 glory with an
+                      adventurous second album.
+                    </p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -346,45 +381,61 @@
 
         <!-- Start Movie Section -->
         <div id="movies-section" class="section">
-          <div class="container" style="margin-top: -100px;">
-            <h5>Movie</h5>
+          <div class="container border-red">
+            <h5 class="title-index">Movie</h5>
             <div class="row">
               <div class="col-md-5 col-xl-4">
-                <h6>TARANTINO HOLLYWOOD</h6>
-                <p class="category">
-                  Set in 1969 Los Angeles, Tarantino’s all-star fantasia links
-                  the movie biz and Manson-era violence with explosive results.
-                </p>
-                <img
-                  src="./assets/img/index-news/movie-new01.jpeg"
-                  alt="Raised Image"
-                  class="rounded img-raised"
-                />
+                <a class="ahref-index" href="new.html">
+                  <img
+                    id="raised-image"
+                    src="./assets/img/index-news/movie-new01.jpeg"
+                    alt="Raised Image"
+                    class="rounded"
+                  />
+                  <div class="index-notice-box">
+                    <h6 class="h6-index">Tarantino in Hollywood</h6>
+                    <p class="category">
+                      Set in 1969 Los Angeles, Tarantino’s all-star fantasia links
+                      the movie biz and Manson-era violence with explosive results.
+                    </p>
+                  </div>
+                </a>
               </div>
               <div class="col-md-5 col-xl-4">
-                <h6>What Scares Stephen King?</h6>
-                <p class="category">
-                  His new book predicted Trump’s horrors, and he has a lot more
-                  on the way. The only thing he doesn’t want to think about?
-                </p>
-                <img
-                  src="./assets/img/index-news/movie-new02.jpeg"
-                  alt="Raised Image"
-                  class="rounded img-raised"
-                />
+                <a class="ahref-index" href="new.html">
+                  <img
+                    id="raised-image"
+                    src="./assets/img/index-news/movie-new02.jpeg"
+                    alt="Raised Image"
+                    class="rounded"
+                  />
+                  <div class="index-notice-box">
+                    <h6 class="h6-index">What Scares Stephen King?</h6>
+                    <p class="category">
+                      His new book predicted Trump’s horrors, and he has a lot more
+                      on the way. The only thing he doesn’t want to think about?
+                    </p>
+                  </div>
+                </a>
               </div>
               <div class="col-md-5 col-xl-4">
-                <h6>‘The Dirt’ Review</h6>
-                <p class="category">
-                  We finally get a movie based on Motley Crue’s legendary tale
-                  of life as a debauched rock band — and we’d like to return it
-                  for a better version, please.
-                </p>
-                <img
-                  src="./assets/img/index-news/movie-new03.jpeg"
-                  alt="Raised Image"
-                  class="rounded img-raised"
-                />
+                <a href="">
+                  <a class="ahref-index" href="new.html">
+                  <img
+                    id="raised-image"
+                    src="./assets/img/index-news/movie-new03.jpeg"
+                    alt="Raised Image"
+                    class="rounded"
+                  />
+                  <div class="index-notice-box">
+                    <h6 class="h6-index">‘The Dirt’ Review</h6>
+                    <p class="category">
+                      We finally get a movie based on Motley Crue’s legendary tale
+                      of life as a debauched rock band — and we’d like to return it
+                      for a better version, please.
+                    </p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -392,86 +443,111 @@
         <!-- End Movie Section -->
 
         <!-- Start Politics Section -->
-        <div id="movies-section" class="section">
-          <div class="container" style="margin-top: -100px;">
-            <h5>Politics</h5>
+        <div id="politics-section" class="section">
+          <div class="container border-red">
+            <h5 class="title-index">Politics</h5>
             <div class="row">
               <div
                 class="col-md-5 col-xl-2"
                 style="flex: 0 0 20%; max-width: 20%;"
               >
-                <h6>Manson Mystery</h6>
-                <p class="category" style="text-align: left;">
-                  Fifty years ago, Bobby Beausoleil murdered a man. Did he set
-                  in motion the Manson killings and the myth of Helter Skelter?
-                </p>
+              <a class="ahref-index" href="new.html">
                 <img
-                  src="./assets/img/index-news/politics-new01.jpeg"
-                  alt="Raised Image"
-                  class="rounded img-raised"
-                />
+                    id="raised-image"
+                    src="./assets/img/index-news/politics-new01.jpeg"
+                    alt="Raised Image"
+                    class="rounded"
+                  />
+                  <div class="index-notice-box-politics">
+                    <h6 class="h6-index">Manson Mystery</h6>
+                    <p class="category" style="text-align: left;">
+                      Fifty years ago, Bobby Beausoleil murdered a man. Did he set
+                      in motion the Manson killings and the myth of Helter Skelter?
+                    </p>
+                  </div>
+                </a>
               </div>
               <div
                 class="col-md-5 col-xl-2"
                 style="flex: 0 0 20%; max-width: 20%;"
               >
-                <h6>FALSE IDOL</h6>
-                <p class="category" style="text-align: left;">
-                  Donald Trump was in a conference room at Trump Tower in New
-                  York talking to leaders of the religious right about
-                  sex-reassignment surgery.
-                </p>
+              <a class="ahref-index" href="new.html">
                 <img
+                  id="raised-image"
                   src="./assets/img/index-news/politics-new02.jpeg"
                   alt="Raised Image"
-                  class="rounded img-raised"
+                  class="rounded"
                 />
+                <div class="index-notice-box-politics">
+                  <h6 class="h6-index">False Idol</h6>
+                  <p class="category" style="text-align: left;">
+                    Donald Trump was in a conference room at Trump Tower in New
+                    York talking to leaders of the religious right about
+                    sex-reassignment surgery.
+                  </p>
+                </div>
+              </a>
               </div>
               <div
                 class="col-md-5 col-xl-2"
                 style="flex: 0 0 20%; max-width: 20%;"
               >
-                <h6>Greta Thunberg</h6>
-                <p class="category" style="text-align: left;">
-                  How a teenage girl’s lone strike against climate change became
-                  an international movement. Greta decided she would not be
-                  going back to school.
-                </p>
+              <a class="ahref-index" href="new.html">
                 <img
+                  id="raised-image"
                   src="./assets/img/index-news/politics-new03.jpeg"
                   alt="Raised Image"
-                  class="rounded img-raised"
+                  class="rounded"
                 />
+                <div class="index-notice-box-politics">
+                  <h6 class="h6-index">Greta Thunberg</h6>
+                  <p class="category" style="text-align: left;">
+                    How a teenage girl’s lone strike against climate change became
+                    an international movement. Greta decided she would not be
+                    going back to school.
+                  </p>
+                </div>
+              </a>
               </div>
               <div
                 class="col-md-5 col-xl-2"
                 style="flex: 0 0 20%; max-width: 20%;"
               >
-                <h6>Hope and Survival in Los Pinos</h6>
-                <p class="category" style="text-align: left;">
-                  Families in Los Pinos wait for their children to be weighed
-                  and tested for nutritional deficiencies.
-                </p>
+              <a class="ahref-index" href="new.html">
                 <img
+                  id="raised-image"
                   src="./assets/img/index-news/politics-new04.jpeg"
                   alt="Raised Image"
-                  class="rounded img-raised"
+                  class="rounded"
                 />
+                <div class="index-notice-box-politics">
+                  <h6 class="h6-index">Hope and Survival in Los Pinos</h6>
+                  <p class="category" style="text-align: left;">
+                    Families in Los Pinos wait for their children to be weighed
+                    and tested for nutritional deficiencies.
+                  </p>
+                </div>
+              </a>
               </div>
               <div
                 class="col-md-5 col-xl-2"
                 style="flex: 0 0 20%; max-width: 20%;"
-              >
-                <h6>Queer Pride Is Going Back to Its Protest Roots</h6>
-                <p class="category" style="text-align: left;">
-                  LGBTQ Pride month in alignment with the movement for racial
-                  justice.
-                </p>
-                <img
-                  src="./assets/img/index-news/politics-new05.jpeg"
-                  alt="Raised Image"
-                  class="rounded img-raised"
-                />
+                >
+                <a class="ahref-index" href="new.html">
+                  <img
+                    id="raised-image"
+                    src="./assets/img/index-news/politics-new05.jpeg"
+                    alt="Raised Image"
+                    class="rounded"
+                  />
+                  <div class="index-notice-box-politics">
+                    <h6 class="h6-index">Queer Pride Is Going Back to Its Protest Roots</h6>
+                    <p class="category" style="text-align: left;">
+                      LGBTQ Pride month in alignment with the movement for racial
+                      justice.
+                    </p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -479,29 +555,38 @@
 
         <!-- Start Charts Section -->
         <div id="charts-section" class="section">
-          <div class="container" style="margin-top: -100px;">
-            <h5>Charts</h5>
+          <div class="container border-red" >
+            <h5 class="title-index">Charts</h5>
             <div class="row">
               <div class="col-md-10 col-xl-4">
-                <img
-                  src="./assets/img/index-news/chart-new01.jpeg"
-                  alt="Raised Image"
-                  class="rounded img-raised"
-                />
+                <a class="ahref-index" href="new.html">
+                  <img
+                    id="raised-image"
+                    src="./assets/img/index-news/chart-new01.jpeg"
+                    alt="Raised Image"
+                    class="rounded"
+                  />
+                </a>
               </div>
               <div class="col-md-10 col-xl-4">
-                <img
-                  src="./assets/img/index-news/chart-new02.jpeg"
-                  alt="Raised Image"
-                  class="rounded img-raised"
-                />
+                <a class="ahref-index" href="new.html">
+                  <img
+                    id="raised-image"
+                    src="./assets/img/index-news/chart-new02.jpeg"
+                    alt="Raised Image"
+                    class="rounded"
+                  />
+                </a>
               </div>
               <div class="col-md-10 col-xl-4">
-                <img
-                  src="./assets/img/index-news/chart-new03.jpeg"
-                  alt="Raised Image"
-                  class="rounded img-raised"
-                />
+                <a class="ahref-index" href="new.html">
+                  <img
+                    id="raised-image"
+                    src="./assets/img/index-news/chart-new03.jpeg"
+                    alt="Raised Image"
+                    class="rounded"
+                  />
+                </a>
               </div>
             </div>
           </div>
