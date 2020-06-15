@@ -101,6 +101,16 @@
             $("#lizo").animate({ left: "-=400" }, 1000);
             $("#music-button").animate({ 'padding-left': 200 }, 1000);
             $("#lizo-button").animate({ 'padding-right': 200 }, 1000);
+
+            $( ".ahref-index" ).hover(
+          function() {
+            $(this).find("#raised-image").addClass( "img-raised-index" );
+            $(this).find("#raised-image").removeClass( "img-raised-down" );
+          }, function() {
+            $(this).find("#raised-image").removeClass( "img-raised-index" );
+            $(this).find("#raised-image").addClass( "img-raised-down" );
+          }
+        );
         });
 
         $(window).scroll(function () {
@@ -212,129 +222,130 @@
         <div class="main">
 
             <div class="section" style="color: white; background-color: #141414 !important;">
-                <div class="container">
-                    <h5>Music</h5>
+                <div class="container border-green">
+                    <h5 class="title-newg">Music</h5>
                     <div class="row">
                         <div class="col-4">
-                            <a class="ahref-new" href="news-ng.html">
-                                <h6 class="new-generation-h6">Camila</h6>
-                                <h6 class="new-generation-h6">Cabello</h6>
+                            <a class="ahref-index" style="color: white;" href="news-ng.html">
+                                <img id="raised-image" src="./assets/img/index-news/music-new04.jpeg" alt="Raised Image"
+                                    class="rounded">
+                                <h6 class="new-generation-h6">Camila Cabello</h6>
                                 <p class="category new-generation-h5" style="color: white !important;">
                                     The pop star on being obsessed with early-aughts pop and why 
                                     falling for Shawn Mendes was ‘awkward’ By BRITTANY SPANOS
                                 </p>
-                                <img src="./assets/img/index-news/music-new04.jpeg" alt="Raised Image"
-                                    class="rounded img-raised">
                             </a>
                         </div>
                         <div class="col-4">
-                            <a class="ahref-new" href="news-ng.html">
+                            <a class="ahref-index" style="color: white;" href="news-ng.html">
+                                <img id="raised-image" src="./assets/img/index-news/music-new03.jpeg" alt="Raised Image"
+                                    class="rounded">
                                 <h6 class="new-generation-h6">How King Princess Became a‘Cheap Queen’</h6>
                                 <p class="category new-generation-h5" style="color: white !important;">
                                     Set in 1969 Los Angeles, Tarantino’s all-star fantasia links the movie biz and Manson-era violence with explosive results
                                 </p>
-                                <img src="./assets/img/index-news/music-new03.jpeg" alt="Raised Image"
-                                    class="rounded img-raised">
                             </a>
                         </div>
                         <div class="col-4">
-                            <a class="ahref-new" href="news-ng.html">
-                                <h6 class="new-generation-h6">A COUNTRY STAR’S BIG POP MOVE</h6>
+                            <a class="ahref-index" style="color: white;" href="news-ng.html">
+                                <img id="raised-image" src="./assets/img/index-news/tv-new02.jpeg" alt="Raised Image"
+                                    class="rounded">
+                                <h6 class="new-generation-h6">A Country Star's Big Pop Move</h6>
                                 <p class="category new-generation-h5" style="color: white !important;">
                                     Maren Morris makes her bid for Top 40 glory with an adventurous
                                     second album By ROB SHEFFIELD
                                 </p>
-                                <img src="./assets/img/index-news/tv-new02.jpeg" alt="Raised Image"
-                                    class="rounded img-raised">
                             </a>
                         </div>
                         <div class="w-100" style="margin-bottom: 20px;"></div>
                         <div class="col-4">
-                            <a class="ahref-new" href="news-ng.html">
-                                <h6 class="new-generation-h6">COLDPLAY</h6>
-                                <h6 class="new-generation-h6">GET REAL</h6>
+                            <a class="ahref-index" style="color: white;" href="news-ng.html">
+                                <img id="raised-image" src="./assets/img/index-news/music-new05.jpeg" alt="Raised Image"
+                                    class="rounded">
+                                <h6 class="new-generation-h6">Coldplay Get Real</h6>
                                 <p class="category new-generation-h5" style="color: white !important;">
                                     The easy-listening rock kings deepen their politics andglobe-trotting sound By WILL HERMES
                                 </p>
-                                <img src="./assets/img/index-news/music-new05.jpeg" alt="Raised Image"
-                                    class="rounded img-raised">
                             </a>
                         </div>
                         <div class="col-4">
-                            <a class="ahref-new" href="news-ng.html">
+                            <a class="ahref-index" style="color: white;" href="news-ng.html">
+                                <img id="raised-image" src="./assets/img/index-news/music-new06.jpeg" alt="Raised Image"
+                                    class="rounded">
                                 <h6 class="new-generation-h6">Lil Baby: An Atlanta Rap Star Is Born</h6>
                                 <p class="category new-generation-h5" style="color: white !important;">
                                     Three years ago, the rapper was in prison. Now he’s racking upbillions of streams and getting VIP service
                                 </p>
-                                <img src="./assets/img/index-news/music-new06.jpeg" alt="Raised Image"
-                                    class="rounded img-raised">
                             </a>
                         </div>
                         <div class="col-4">
-                            <a class="ahref-new" href="news-ng.html">
+                            <a class="ahref-index" style="color: white;" href="news-ng.html">
+                                <img id="raised-image" src="./assets/img/index-news/music-new07.jpeg" alt="Raised Image"
+                                    class="rounded">
                                 <h6 class="new-generation-h6">Lizzo’s Bridal Breakthrough</h6>
                                 <p class="category new-generation-h5" style="color: white !important;">
                                     After years of underground fame, Lizzo blew up in the first half of 2019 with an excellent album and a Top 10 hit.
                                 </p>
-                                <img src="./assets/img/index-news/music-new07.jpeg" alt="Raised Image"
-                                    class="rounded img-raised">
                             </a>
                         </div>
                     </div>
+                </div>
+                <div class="container border-green" style="margin-top: 70px;">
+                    <h5 class="title-newg">News</h5>
                     <div class="row" style="margin-top: 30px; width: 123%;">
                         <div class="col-2">
-                            <a class="ahref-new" href="news-ng.html">
-                                <h6 class="new-generation-h6" style="margin-bottom: 28%;">Hope and Survival in Los Pinos</h6>
+                            <a class="ahref-index" style="color: white;" href="news-ng.html">
+                                <img id="raised-image" src="./assets/img/index-news/politics-new04.jpeg" alt="Raised Image"
+                                    class="rounded">
+                                <h6 class="new-generation-h6" >Hope and Survival in Los Pinos</h6>
                                 <p class="category new-generation-h5" style="color: white !important;">
                                     Families in Los Pinos wait for their children to be weighed and tested for nutritional deficiencies. 
                                     “In 2016, we went a weekwithout eating so the kids could eat,” says Idalia Gutierrez, a mother of four.
                                 </p>
-                                <img src="./assets/img/index-news/politics-new04.jpeg" alt="Raised Image"
-                                    class="rounded img-raised">
                             </a>
                         </div>
                         <div class="col-2">
-                            <a class="ahref-new" href="news-ng.html">
+                            <a class="ahref-index" style="color: white;" href="news-ng.html">
+                                <img id="raised-image" src="./assets/img/index-news/politics-new05.jpeg" alt="Raised Image"
+                                    class="rounded">
                                 <h6 class="new-generation-h6" >Queer Pride Is Going Back to Its Protest Roots</h6>
                                 <p class="category new-generation-h5" style="margin-bottom: 20%; color: white !important;">
                                     New York’s Reclaim Pride is just one of several organizations that are refocusing their 
                                     events during LGBTQ Pride month in alignment with the movement for racial justice.
                                 </p>
-                                <img src="./assets/img/index-news/politics-new05.jpeg" alt="Raised Image"
-                                    class="rounded img-raised">
                             </a>
                         </div>
                         <div class="col-2">
-                            <a class="ahref-new" href="news-ng.html">
-                                <h6 class="new-generation-h6" style="margin-bottom: 28%;">TARANTINO DOES PULP HOLLYWOOD</h6>
+                            <a class="ahref-index" style="color: white;" href="news-ng.html">
+                                <img id="raised-image" src="./assets/img/index-news/movie-new01.jpeg" alt="Raised Image"
+                                    class="rounded">
+                                <h6 class="new-generation-h6" >Tarantino Does Pulp Hollywood</h6>
                                 <p class="category new-generation-h5" style="margin-bottom: 47%; color: white !important;">
                                     Set in 1969 Los Angeles, Tarantino’s all-star fantasia links the movie biz 
                                     and Manson-era violence with explosive results.
                                 </p>
-                                <img src="./assets/img/index-news/movie-new01.jpeg" alt="Raised Image"
-                                    class="rounded img-raised">
                             </a>
                         </div>
                         <div class="col-2">
-                            <a class="ahref-new" href="news-ng.html">
-                                <h6 class="new-generation-h6" style="margin-bottom: 28%;">‘The Dirt’ Review: Too Fast for Love</h6>
+                            <a class="ahref-index" style="color: white;" href="news-ng.html">
+                                <img id="raised-image" src="./assets/img/index-news/movie-new03.jpeg" alt="Raised Image"
+                                    class="rounded">
+                                <h6 class="new-generation-h6" >‘The Dirt’ Review: Too Fast for Love</h6>
                                 <p class="category new-generation-h5" style="margin-bottom: 34%; color: white !important;">
                                     We finally get a movie based on Motley Crue’s legendary tale of life as a debauched 
                                     rock band — and we’d like to return it for a better version, please
                                 </p>
-                                <img src="./assets/img/index-news/movie-new03.jpeg" alt="Raised Image"
-                                    class="rounded img-raised">
                             </a>
                         </div>
                         <div class="col-2">
-                            <a class="ahref-new" href="news-ng.html">
-                                <h6 class="new-generation-h6" style="margin-bottom: 46%;">ROOKIES OF THE YEAR</h6>
+                            <a class="ahref-index" style="color: white;" href="news-ng.html">
+                                <img id="raised-image" src="./assets/img/index-news/music-new08.jpeg" alt="Raised Image"
+                                    class="rounded">
+                                <h6 class="new-generation-h6" >Rookies Of The Year</h6>
                                 <p class="category new-generation-h5" style="margin-bottom: 47%; color: white !important;">
                                     Juice Wrld (below) threw the first pitch at a Twins-White Sox game in the rapper’s
                                     home town of Chicago.
                                 </p>
-                                <img src="./assets/img/index-news/music-new08.jpeg" alt="Raised Image"
-                                    class="rounded img-raised">
                             </a>
                         </div>
                     </div>

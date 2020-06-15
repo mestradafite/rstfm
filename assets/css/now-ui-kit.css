@@ -3642,6 +3642,7 @@ h6,
   text-align: left;
   text-transform: none;
   font-size: 30px;
+  margin-top: 20px;
 }
 
 .round-title {
@@ -4803,15 +4804,21 @@ Created using IcoMoon - icomoon.io
   color: white;
   top: 200px;
   right: 200px;
-  padding-left: 20px;
   border-left: solid #d81f26;
+  background: rgba(0, 0, 0, 0.6);
   border-radius: 1px;
   text-align: justify;
   max-width: 30%;
+  padding: 2%;
 }
 
 .border-red{
   border-top: solid 4px #d81f26;
+  padding-top: 1%;
+}
+
+.border-green{
+  border-top: solid 4px #86c83c;
   padding-top: 1%;
 }
 
@@ -4821,13 +4828,20 @@ Created using IcoMoon - icomoon.io
   font-size: 50px;
 }
 
+.title-newg{
+  font-weight: 700;
+  font-family: "Labil Grotesk";
+  font-size: 50px;
+}
+
 .carousel-new-notice {
   position: fixed;
   color: white;
-  background: rgba(0, 0, 0, 0.6);
   top: 200px;
   right: 200px;
-  text-align: left;
+  background: rgba(0, 0, 0, 0.6);
+  border-left: solid #86c83c;
+  text-align: justify;
   max-width: 30%;
   padding: 2%;
 }

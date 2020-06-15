@@ -95,6 +95,16 @@
       $("#lizo").animate({left: "-=400"}, 1000);
       $("#music-button").animate({ 'padding-left' : 200 }, 1000);
       $("#lizo-button").animate({ 'padding-right' : 200 }, 1000);
+
+      $( ".ahref-index" ).hover(
+          function() {
+            $(this).find("#raised-image").addClass( "img-raised-index" );
+            $(this).find("#raised-image").removeClass( "img-raised-down" );
+          }, function() {
+            $(this).find("#raised-image").removeClass( "img-raised-index" );
+            $(this).find("#raised-image").addClass( "img-raised-down" );
+          }
+        );
     });
 
     $(window).scroll(function() {
@@ -209,47 +219,55 @@
 
       <div class="section">
         <div class="container">
+          <h5 class="title-index" style="font-size: 25px;">MUSIC</h5>
           <div class="row">
             <div class="col-9">
               <div class="container">
-                <h5>MUSIC</h5>
                 <div class="row">
                   <div class="col">
-                    <a class="ahref" href="new.html">
-                      <h6>INSIDE THE ROCK BIOPIC BOOM</h6>
-                      <p class="category">The genre is enjoying an unprecedentedresurgence, thanks to the success of Bohemian Rhapsody and Rocketman.</p>
-                      <img src="./assets/img/index-news/music-new02.jpeg" alt="Raised Image" class="rounded img-raised">
+                    <a class="ahref-index" href="new.html">
+                      <img id="raised-image" src="./assets/img/index-news/music-new02.jpeg" alt="Raised Image" class="rounded">
+                      <div class="index-notice-box">
+                        <h6 class="h6-index">Inside The Rock Biotopic Boom</h6>
+                        <p class="category">The genre is enjoying an unprecedentedresurgence, thanks to the success of Bohemian Rhapsody and Rocketman.</p>
+                      </div>
                     </a>
                   </div>
                   <div class="col">
-                    <a class="ahref" href="new.html">
-                      <h6>ELVIS PRESLEY</h6>
-                      <p class="category">
-                        Sacha Gervasi, the director of
-                        2008’s metal doc Anvil, will tell
-                        the story of the Culture Club
-                        frontman.
-                      </p>
-                      <img src="./assets/img/index-news/top-new01.jpeg" alt="Raised Image" class="rounded img-raised">
+                    <a class="ahref-index" href="new.html">
+                      <img id="raised-image" src="./assets/img/index-news/top-new01.jpeg" alt="Raised Image" class="rounded">
+                      <div class="index-notice-box">
+                        <h6 class="h6-index">Elvis Presley</h6>
+                        <p class="category">
+                          Sacha Gervasi, the director of
+                          2008’s metal doc Anvil, will tell
+                          the story of the Culture Club
+                          frontman.
+                        </p>
+                      </div>
                     </a>
                   </div>
                   <div class="w-100"></div>
                   <div style="margin-top: 20px;" class="col">
-                    <a class="ahref" href="new.html">
-                      <h6>Reliving the Stones’ Apocalyptic Epicnow</h6>
-                      <p class="category">
-                        Their 1969 classic, ‘Let It Bleed,’ remains the band’s darkest
-                      </p>
-                      <img src="./assets/img/index-news/top-new02.jpeg" alt="Raised Image" class="rounded img-raised">
+                    <a class="ahref-index" href="new.html">
+                      <img id="raised-image" src="./assets/img/index-news/top-new02.jpeg" alt="Raised Image" class="rounded">
+                      <div class="index-notice-box">
+                        <h6 class="h6-index">Reliving the Stones’ Apocalyptic Epicnow</h6>
+                        <p class="category">
+                          Their 1969 classic, ‘Let It Bleed,’ remains the band’s darkest
+                        </p>
+                      </div>
                     </a>
                   </div>
                   <div style="margin-top: 20px;" class="col">
-                    <a class="ahref" href="new.html">
-                      <h6>ARETHA FRANKLIN</h6>
-                      <p class="category">This Queen of Soul biopic, titled
-                        Respect, had been in the works
-                        long before the singer died.</p>
-                      <img src="./assets/img/index-news/top-new03.jpeg" alt="Raised Image" class="rounded img-raised">
+                    <a class="ahref-index" href="new.html">
+                      <img id="raised-image" src="./assets/img/index-news/top-new03.jpeg" alt="Raised Image" class="rounded">
+                      <div class="index-notice-box">
+                        <h6 class="h6-index">Aretha Franklin</h6>
+                        <p class="category">This Queen of Soul biopic, titled
+                          Respect, had been in the works
+                          long before the singer died.</p>
+                      </div>
                     </a>
                   </div>
                 </div>
@@ -258,25 +276,25 @@
             <div class="col" >
               <div class="container" style="padding-left: 20%;  border-left: solid #d81f26;">
                 <div class="row">
-                  <a class="ahref" href="new.html">
-                    <h6>WHAT SCARES STEPHEN KING?</h6>
+                  <a class="ahref-index" href="new.html">
+                    <img id="raised-image"  src="./assets/img/index-news/movie-new02.jpeg" alt="Raised Image" class="rounded">
+                    <h6 class="h6-index" style="margin-top: 10px;">What Scares Stephen King?</h6>
                     <p class="category">His new book predicted Trump’s horrors.</p>
-                    <img src="./assets/img/index-news/movie-new02.jpeg" alt="Raised Image" class="rounded img-raised">
                   </a>
                 </div>
                 <div style="margin-top: 30px;" class="row">
-                  <a class="ahref" href="new.html">
-                    <h6>INSIDE ELTON JOHN’S MAGICAL MOVIE</h6>
+                  <a class="ahref-index" href="new.html">
+                    <img id="raised-image"  src="./assets/img/index-news/tv-new01.jpeg" alt="Raised Image" class="rounded">
+                    <h6 class="h6-index" style="margin-top: 10px;">Inside Elton John's Magical Movie</h6>
                     <p class="category">His new big-screen musical, ‘Rocketman,’</p>
-                    <img src="./assets/img/index-news/tv-new01.jpeg" alt="Raised Image" class="rounded img-raised">
                   </a>
                 </div>
                 <div style="margin-top: 30px;" class="row">
-                  <a class="ahref" href="new.html">
-                    <h6>THE QUEEN.</h6>
+                  <a class="ahref-index" href="new.html">
+                    <img id="raised-image"  src="./assets/img/index-news/top-new04.jpeg" alt="Raised Image" class="rounded">
+                    <h6 class="h6-index" style="margin-top: 10px;">The Queen</h6>
                     <p class="category">It was written by Freddie Mercury
                       for the band’s 1975 album.</p>
-                    <img src="./assets/img/index-news/top-new04.jpeg" alt="Raised Image" class="rounded img-raised">
                   </a>
                 </div>
               </div>
