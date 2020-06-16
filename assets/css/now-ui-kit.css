@@ -3657,6 +3657,7 @@ h6,
   position: absolute;
   width: 105px;
   right: 7%;
+  margin-top: 23px;
 }
 
 .round-title-light {
@@ -3671,16 +3672,15 @@ h6,
   width: 100px;
 }
 
-.h6-index{
+.h6-index {
   text-transform: none;
 }
 
-
-.index-notice-box{
+.index-notice-box {
   padding-top: 5%;
 }
 
-.index-notice-box-politics{
+.index-notice-box-politics {
   padding-top: 10%;
 }
 
@@ -3923,11 +3923,11 @@ body {
   color: #444;
 }
 
-.readmore:hover{
+.readmore:hover {
   color: #86c83c;
 }
 
-.readmore{
+.readmore {
   color: #86c83c;
 }
 
@@ -4812,23 +4812,23 @@ Created using IcoMoon - icomoon.io
   padding: 2%;
 }
 
-.border-red{
+.border-red {
   border-top: solid 4px #d81f26;
   padding-top: 1%;
 }
 
-.border-green{
+.border-green {
   border-top: solid 4px #86c83c;
   padding-top: 1%;
 }
 
-.title-index{
+.title-index {
   font-weight: 700;
   font-family: "Zurich Black BT";
   font-size: 50px;
 }
 
-.title-newg{
+.title-newg {
   font-weight: 700;
   font-family: "Labil Grotesk";
   font-size: 50px;
